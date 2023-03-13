@@ -33,10 +33,11 @@ html {
 }
 
 .css-bayan__item {
-  border-top: 1px solid #e6e9e8;
+  border-top: 0.2em solid #e6e9e8;
 }
 
-.css-bayan__meme-label {
+.css-bayan__meme-label:active {
+  opacity: 0.6;
 }
 
 .css-bayan__meme-input {
