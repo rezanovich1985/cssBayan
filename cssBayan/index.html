@@ -5,9 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Bayan</title>
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    Hello, world!
+  <body class="body">
+    <div class="wrapper">
+      <div class="css-bayan">
+        <div class="css-bayan__title">CSS Bayan</div>
+        <div class="css-bayan__items">
+          <div class="css-bayan__item">
+            <label class="css-bayan__meme-label" for="meme1">
+              <input
+                class="css-bayan__meme-input"
+                type="radio"
+                name="meme"
+                id="meme1"
+                checked
+              />
+              <div class="css-bayan__meme-title">
+                <div class="css-bayan__meme-text">
+                  You can't just copy and paste CSS
+                </div>
+                <div class="css-bayan__meme-icon">+</div>
+              </div>
+              <img
+                class="css-bayan__meme-image"
+                src="../cssBayan/assets/img/You can't just copy and paste CSS.png"
+                alt="You can't just copy and paste CSS.png"
+              />
+            </label>
+          </div>
+          <div class="css-bayan__item">
+            <label class="css-bayan__meme-label" for="meme2">
+              <input
+                class="css-bayan__meme-input"
+                type="radio"
+                name="meme"
+                id="meme2"
+              />
+              <div class="css-bayan__meme-title">
+                <div class="css-bayan__meme-text">Keep calm and carry on</div>
+                <div class="css-bayan__meme-icon">+</div>
+              </div>
+              <img
+                class="css-bayan__meme-image"
+                src="../cssBayan/assets/img/Keep calm and carry on.png"
+                alt="Keep calm and carry on.png"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
