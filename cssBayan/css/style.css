@@ -18,6 +18,7 @@ html {
 
 .css-bayan__items {
   color: #1c5ed2;
+  transition: 0.5s;
 }
 .css-bayan__items:hover {
   color: black;
@@ -61,6 +62,7 @@ html {
   line-height: inherit;
   font-weight: inherit;
   opacity: 0;
+  transition: 0.5s;
 }
 .css-bayan__items:hover .css-bayan__meme-icon {
   opacity: 1;
@@ -76,17 +78,17 @@ html {
   margin: 0 auto;
   padding-bottom: 0;
   transform: scale(0);
-  transition: 1s;
+  transition: transform 1s;
 }
 .css-bayan__meme-input:checked ~ .css-bayan__meme-image {
   height: auto;
   padding-bottom: 1em;
   transform: scale(1);
-  transition: 1s;
+  transition: transform 1s;
 }
 .css-bayan__item:hover .css-bayan__meme-image {
   height: auto;
   padding-bottom: 1em;
   transform: scale(1);
-  transition: 1s;
+  transition: transform 1s;
 }
