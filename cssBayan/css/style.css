@@ -20,8 +20,10 @@ html {
   color: #1c5ed2;
   transition: 0.5s;
 }
-.css-bayan__items:hover {
-  color: black;
+@media (hover: hover) {
+  .css-bayan__items:hover {
+    color: black;
+  }
 }
 
 .css-bayan__title {
@@ -65,12 +67,20 @@ html {
   opacity: 0;
   transition: 0.5s;
 }
-.css-bayan__items:hover .css-bayan__meme-icon {
-  opacity: 1;
+@media (hover: hover) {
+  .css-bayan__items:hover .css-bayan__meme-icon {
+    opacity: 1;
+  }
 }
-.css-bayan__meme-input:checked ~ .css-bayan__meme-title > .css-bayan__meme-icon,
-.css-bayan__item:hover .css-bayan__meme-icon {
+.css-bayan__meme-input:checked
+  ~ .css-bayan__meme-title
+  > .css-bayan__meme-icon {
   rotate: 45deg;
+}
+@media (hover: hover) {
+  .css-bayan__item:hover .css-bayan__meme-icon {
+    rotate: 45deg;
+  }
 }
 
 .css-bayan__meme-image {
@@ -87,11 +97,13 @@ html {
   transform: scale(1);
   transition: transform 1s;
 }
-.css-bayan__item:hover .css-bayan__meme-image {
-  height: auto;
-  padding-bottom: 1em;
-  transform: scale(1);
-  transition: transform 1s;
+@media (hover: hover) {
+  .css-bayan__item:hover .css-bayan__meme-image {
+    height: auto;
+    padding-bottom: 1em;
+    transform: scale(1);
+    transition: transform 1s;
+  }
 }
 
 @media (max-width: 820px) {
