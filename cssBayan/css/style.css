@@ -7,13 +7,22 @@ html {
 }
 
 .body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #f6f6ee;
 }
 
 .wrapper {
   max-width: 50vh;
   margin: 0 auto;
+}
+
+.css-bayan {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.css-bayan__title {
+  padding: 0.5em 0;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .css-bayan__items {
@@ -24,12 +33,6 @@ html {
   .css-bayan__items:hover {
     color: black;
   }
-}
-
-.css-bayan__title {
-  padding: 0.5em 0;
-  font-size: 2em;
-  font-weight: bold;
 }
 
 .css-bayan__item {
@@ -50,7 +53,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1em 0;
-  line-height: auto;
   font-weight: bold;
 }
 .css-bayan__meme-input:checked ~ .css-bayan__meme-title {
@@ -58,12 +60,10 @@ html {
 }
 
 .css-bayan__meme-text {
-  line-height: inherit;
   font-weight: inherit;
 }
 
 .css-bayan__meme-icon {
-  line-height: inherit;
   font-weight: inherit;
   opacity: 0;
   transition: 0.5s;
@@ -86,24 +86,24 @@ html {
 
 .css-bayan__meme-image {
   display: block;
-  height: 0;
+  max-height: 0;
   margin: 0 auto;
   padding-bottom: 0;
   transform: scale(0);
-  transition: transform 1s;
+  transition: 1s;
 }
 .css-bayan__meme-input:checked ~ .css-bayan__meme-image {
-  height: auto;
+  max-height: 50vh;
   padding-bottom: 1em;
   transform: scale(1);
-  transition: transform 1s;
+  transition: 1s;
 }
 @media (hover: hover) {
   .css-bayan__item:hover .css-bayan__meme-image {
-    height: auto;
+    max-height: 50vh;
     padding-bottom: 1em;
     transform: scale(1);
-    transition: transform 1s;
+    transition: 1s;
   }
 }
 
