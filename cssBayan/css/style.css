@@ -39,6 +39,9 @@ html {
   border-top: 0.2em solid #e6e9e8;
 }
 
+.css-bayan__meme-label {
+  transition: 0.5s;
+}
 .css-bayan__meme-label:active {
   opacity: 0.6;
 }
